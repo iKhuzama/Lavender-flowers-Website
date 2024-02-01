@@ -1,0 +1,209 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> sign in </title>
+       
+        <style> 
+
+        body { 
+        padding:0; margin:0; font-family:sans-serif; 
+        background: url(lavender3re.jpg); 
+        background-size:cover; }
+            
+        form { 
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 450px;
+        height: 500px;
+        background: rgb(255, 255, 255);
+        border-radius: 15px;
+        box-sizing: border-box; }
+            
+        h1 {
+        color: rgb(92, 90, 90);    
+        text-align: center;
+        margin-top: 85px; }
+            
+        
+        input[id="name"] {
+        position: absolute;
+        outline: none;
+        border: none;
+        width:250px;
+        height:35px;
+        border-bottom: 2px solid #46446A;
+        background: none;
+        padding: 5px;
+        color: rgb(92, 90, 90); 
+        top: 140px;
+        left: 100px; }
+
+        input[id="Email"] {
+        position: absolute;
+        outline: none;
+        border: none;
+        width:250px;
+        height:35px;
+        border-bottom: 2px solid #46446A;
+        background: none;
+        padding: 5px;
+        color: rgb(92, 90, 90); 
+        top: 190px;
+        left: 100px; } 
+            
+        input[id="Password"] {
+        position: absolute;
+        outline: none;
+        border: none;
+        width:250px;
+        height:35px;
+        border-bottom: 2px solid #46446A;
+        background: none;
+        padding: 5px;
+        color: rgb(92, 90, 90); 
+        top: 240px;
+        left: 100px; } 
+        
+        input[id="confPasswordText"] {
+        position: absolute;
+        outline: none;
+        border: none;
+        width:250px;
+        height:35px;
+        border-bottom: 2px solid #46446A;
+        background: none;
+        padding: 5px;
+        color: rgb(92, 90, 90); 
+        top: 290px;
+        left: 100px; }
+
+        input[id="date"] {
+        position: absolute;
+        outline: none;
+        border: none;
+        width: 250px;
+        height:35px;
+        border-bottom: 2px solid #46446A;
+        background: none;
+        padding: 5px;
+        color: rgb(92, 90, 90); 
+        top: 340px;
+        left: 100px; }
+         
+    
+        span {
+        position: absolute;
+        outline: none;
+        border: none;
+        width: 250px;
+        height: 35px;
+        background: none;
+        padding: 5px;
+        color: rgb(92, 90, 90); 
+        top: 390px;
+        left: 90px;
+        font-size: 11px;    }
+
+        input[type="checkbox"]{
+        cursor: pointer; }
+            
+        input[value="Sign in"] {
+        position:absolute ;
+        top: 430px;
+        left: 183px;
+        width: 90px;
+        height: 35px;
+        background: #46446A;
+        border: #bfadc2;
+        outline: none;
+        color:#fff; 
+        font-size: 12px;
+        border-radius: 8px; }
+        
+        input[value="Sign in"]:hover {
+        background: #bfadc2;
+        color: solid #46446A; 
+        cursor: pointer; }
+            
+        input[value="Cancel"] {
+        position:absolute ;
+        top: 430px;
+        left: 130px;
+        width: 90px;
+        height: 35px;
+        background: #46446A;
+        border: #bfadc2;
+        outline: none;
+        color:#fff; 
+        font-size: 12px;
+        border-radius: 8px; }
+        
+        input[value="Cancel"]:hover {
+        background: #bfadc2;
+        color: solid #46446A; 
+        cursor: pointer; }
+    
+        </style>
+
+        </head>
+        <body>
+            <header>
+              
+            </header>
+            <section>
+                <form method="post" action="signin.php">
+
+                    <h1
+                    id="titlesignin" > Sign In 
+                    </h1>
+
+                    <input 
+                    id="name" name="name" type="text" 
+                    size="25" placeholder="Enter Your UserName"
+                    required/>
+                    
+            
+                    <input
+                    id="Email" name="Email" type="text" 
+                    size="25" placeholder="(name@domain.com)" 
+                    required />
+                    
+
+                    <input 
+                    id="Password" name="Password" type="password" 
+                    size="25" placeholder="Enter password"
+                    required/> 
+            
+                    <input 
+                    id="confPasswordText" type="password" 
+                    size="25" placeholder="Renter the password"
+                    required/>
+             
+                    <input
+                    id="date" name="date" type="date" 
+                    required/>
+                    
+                    <span>
+                    <input 
+                    id="rememberCheckBox" type="checkbox" 
+                    checked="checked" name="remember" value="Remeber me" /> 
+                    <label for id="rememberCheckBox"> Remeber me </label>
+                    </span>
+
+                    <a href ="signin.php">
+                    <input name="submit" type="submit" 
+                    value="Sign in"/>
+                    </a>
+
+                    
+             
+                </form>
+            </section>
+         
+      
+        </body>
+    
+</html>

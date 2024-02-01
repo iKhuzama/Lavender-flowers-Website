@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+.flex-box{
+    display: flex;
+    width: 1000px;
+    margin: 20px auto;
+}
+.left{
+    width: 50%; 
+}
+.imag{
+    width: 250px;
+    margin-top: 150px;
+    padding-left: 10%;
+}
+.imag img{
+    width: inherit;
+}
+.Iname{
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 150px;
+    padding-left: 15%;
+    color: rgb(179, 137, 201) ;
+}
+.rating i{
+    color: rgb(255, 208, 0);
+}
+.rating{
+    padding-left: 15%;
+}
+.Idescribe{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 20px 0;
+    padding-left: 15%;
+    color: rgb(219, 189, 210);
+}
+.contaner{
+    width: 400px;
+    background-color: rgb(238, 238, 238);
+    padding: 2.5rem;
+    box-shadow: 2px 2px 10px 3px rgb(225, 225, 225); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 30%;
+}
+.contaner .stars input{
+    display: none;
+}
+.stars label{
+    font-size: 20px;
+    color: #444;
+    padding: 10px;
+    float: right;
+    transition: all 0.2s ease;
+}
+input:not(:checked) ~ label:hover,
+ input:not(:checked) ~ label:hover ~ label{
+    color: #fd4;
+}
+input:checked ~ label{
+    color: #fd4;
+}
+input#rate-5 checked ~ label:hover{
+    color: #fe7;
+    text-shadow: 0 0 20px #952;
+}
+form .textarea{
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+}
+form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: 1px solid #333;
+    padding: 10px;
+    font-size: 17px;
+}
+form .btn{
+    height: 45px;
+    width: 100%;
+    margin: 15px 0;
+}
+form .btn button{
+    height: 100%;
+    width: 100%;
+    border: 1px solid #222;
+    outline: none;
+    background: #222;
+    color: rgb(253, 251, 251);
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+form btn button:hover{
+    /*background: #1b1b1b;*/
+}
+
+
+
+

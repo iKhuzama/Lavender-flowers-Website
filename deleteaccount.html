@@ -1,0 +1,188 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>delete account</title>
+        <!--<link rel="stylesheet" href="homepage.css">-->
+    
+        <style>
+
+            body { 
+            padding:0; margin:0; font-family:sans-serif; 
+            background: url(lavender3re.jpg); 
+            background-size:cover; }
+                
+            form { 
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 450px;
+            height: 500px;
+            background: rgb(255, 255, 255);
+            border-radius: 15px;
+            box-sizing: border-box; }
+                
+            h1 {
+            color: rgb(92, 90, 90);    
+            text-align: center;
+            margin-top: 100px; }
+                
+            input[id="usernameText"] {
+            position: absolute;
+            outline: none;
+            border: none;
+            width:250px;
+            height:35px;
+            border-bottom: 2px solid #46446A;
+            background: none;
+            padding: 5px;
+            color: rgb(92, 90, 90); 
+            top: 200px;
+            left: 100px; }
+    
+            input[id="PasswordText"] {
+            position: absolute;
+            outline: none;
+            border: none;
+            width:250px;
+            height:35px;
+            border-bottom: 2px solid #46446A;
+            background: none;
+            padding: 5px;
+            color: rgb(92, 90, 90); 
+            top: 250px;
+            left: 100px; }
+
+            input[value="Login"] {
+            position:absolute ;
+            top: 320px;
+            left: 190px;
+            width: 90px;
+            height: 35px;
+            background: #46446A;
+            border: #bfadc2;
+            outline: none;
+            color:#fff; 
+            font-size: 12px;
+            border-radius: 8px; }
+        
+            input[value="Login"]:hover {
+            background: #bfadc2;
+            color: solid #46446A; 
+            cursor: pointer; }
+
+
+
+
+
+
+
+
+ input[value="Delete"]:hover {
+            background: #bfadc2;
+            color: solid #46446A; 
+            cursor: pointer; }
+
+  input[value="Delete"] {
+            position:absolute ;
+            top: 320px;
+            left: 190px;
+            width: 90px;
+            height: 35px;
+            background: #46446A;
+            border: #bfadc2;
+            outline: none;
+            color:#fff; 
+            font-size: 12px;
+            border-radius: 8px; }
+
+
+
+
+
+
+
+
+
+            input[value="Cancel"] {
+            position:absolute ;
+            top: 325px;
+            left: 130px;
+            width: 90px;
+            height: 35px;
+            background: #46446A;
+            border: #bfadc2;
+            outline: none;
+            color:#fff; 
+            font-size: 12px;
+            border-radius: 8px; }
+        
+            input[value="Cancel"]:hover {
+            background: #bfadc2;
+            color: solid #46446A; 
+            cursor: pointer; }    
+            
+            p{
+            position: absolute;
+            top: 410px;
+            left: 100px;
+            color: solid #46446A;
+            cursor: pointer;}
+
+            p :hover 
+            {
+            cursor: pointer;
+            color: #bfadc2;
+            }
+
+            a{
+            color: #46446A;
+            text-underline-offset: 10000px;}
+
+    </style>
+    </head>
+
+    <body>
+        <header>
+
+        </header>
+
+      <section>
+
+<p style="text-align: center;">
+        <form method="post" action="delete.php">
+             
+                <h1>Delete Account</h1>
+
+        
+                    <input id="usernameText" name="username"
+                    type="text" size="25"
+                    placeholder="Enter UserName" required/>
+
+                    <input id="PasswordText" name="password"
+                    type="password" size="25" 
+                    placeholder="Enter Password" required/>
+                      
+
+                   
+                    <input id="DeleteButton" name="login_user"
+                    type="submit" size="35" value="Delete"/>
+                    </a>
+
+                    </p>
+                   
+                   
+                  
+                  
+                   
+        </form>
+        </section>
+    
+
+
+
+</body>
+
+</html>

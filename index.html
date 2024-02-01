@@ -1,0 +1,238 @@
+<?php
+
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "lavender";
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lavender</title>
+    <link rel="stylesheet" href="homepage.css">
+
+ 
+
+
+
+    
+</head>
+
+
+
+
+
+<body>
+
+ 
+    <!--header -->
+
+    <header>
+       
+  
+        <img src="lavender.jpg" class="lavender">
+        <nav class="navbar">
+
+            <a href="index.html">home</a>
+            <a href="#about us">about us</a>
+            <a href="#stores">stores</a>
+            <a href="manageaccount.html">manage Account</a>
+           <a href="login.html">Log Out</a>
+            <form action='login.php' method='post'>
+            
+
+
+        </nav>
+
+            
+                          
+    </header>
+
+    <section class="home" id="home">
+
+        <div class="content">
+            <br>
+            <h3><em>flowerse are<br>more than words.</em></h3>
+            <span> Discover flowers and rating</span>
+            <br>
+           
+        </div>
+    </section>
+
+    <section class="about" id="about">
+
+        <h1 class="heading"> <span> about </span> us </h1>
+    
+        <div class="row">
+    
+            <div class="video-container">
+                <video src="vid.mp4" loop autoplay muted></video>
+                <h3>best stores</h3>
+            </div>
+    
+            <div class="content" id="about us">
+                <h3>What is Lavender?</h3>
+                <p>Lavender is a Website evaluation flower platform help to create better customer experiences.</p>
+               <p> Lavender is your go-to destination for finding the best flower shops.</p>
+<p>Lavender offer descriptions, ratings, and reviews of flower shops to help you make informed decisions and find the perfect arrangement for any occasion.</p>
+               
+            
+        </div>
+    
+    </section>
+
+    
+<!--stores-->
+
+<section class="stores" id="stores">
+
+    <h1 class="heading" id="stores"> All <span>stores</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="image">
+                <img src="فلاورد.png" alt="">
+            </div>
+            <div class="content">
+               <!-- <h3>Floward</h3>-->
+                <a href="profileitem1.html.#Floward"><h3>Floward</h3></a>
+
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="مزهره.jpg" alt="">
+            </div>
+            <div class="content">
+               <!-- <h3>Mazharh</h3>-->
+               <a href="profileitem1.html.#Mozherh"><h3>Mazharh</h3></a>
+            </div>
+        </div>
+
+        
+        <div class="box">
+            <div class="image">
+                <img src="ميم.jpg" alt="">
+            </div>
+            <div class="content">
+               <!-- <h3>Meem flowers</h3>-->
+                <a href="profileitem1.html.#Mem"><h3>Meem</h3></a>  
+            </div>
+        </div>
+
+        
+        <div class="box">
+            <div class="image">
+                <img src="نبته.png" alt="">
+            </div>
+            <div class="content">
+               <!-- <h3> Nabatah</h3>-->
+                <a href="profileitem1.html.#Nabta"><h3>Nabta</h3></a>  
+            </div>
+        </div>
+
+        
+        <div class="box">
+            <div class="image">
+                <img src="joi.jpg" alt="">
+            </div>
+            <div class="content">
+                <!--<h3>JOI Gifts</h3>-->
+                <a href="profileitem1.html.#Joi"><h3>JOI</h3></a>
+            </div>
+        </div>
+
+        
+        <div class="box">
+            <div class="image">
+                <img src="thex.jpg" alt="">
+            </div>
+            <div class="content">
+                <!--<h3>THE X</h3>-->
+                <a href="profileitem1.html.#The-x"><h3>THE X</h3></a>
+            </div>
+        </div>
+
+        
+        <div class="box">
+            <div class="image">
+                <img src="iluba.jpg" alt="">
+            </div>
+            <div class="content">
+                <a href="profileitem1.html.#Iluba"><h3>iluba</h3></a>
+            </div>
+        </div>
+
+        
+        <div class="box">
+            <div class="image">
+                <img src="اشجار.png" alt="">
+            </div>
+            <div class="content">
+               <!-- <h3>Ashjar</h3>-->
+                <a href="profileitem1.html.#Ashjar"><h3>Ashjar</h3></a>
+
+            </div>
+        </div>
+
+        
+        <div class="box">
+            <div class="image">
+                <img src="نباتاتي.png" alt="">
+            </div>
+            <div class="content">
+               <!-- <h3>nabataty</h3>-->
+                <a href="profileitem1.html.#Nabataty"><h3>Nabataty</h3></a>
+            </div>
+        </div>
+
+        
+
+    </div>
+
+</section>
+
+
+
+
+<!--footer-->
+<section class="footer">
+
+  <center>
+  <div class="box-container">
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#">lavender@gmail.com</a>
+            
+        </div>
+
+    </div>
+
+
+</center>
+<br><br><br>
+<br><br><br>
+    <span>
+        <p> Copyright &copy; . All Rights Reserved. <br> Lavender is Powerd by Web Students. <br>
+        <img src="lavender.jpg" alt="logo"/> </p>
+    </span>
+
+</section>
+
+</body>
+
+</html>
